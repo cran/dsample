@@ -1,0 +1,9 @@
+ee16092d9ae3df12b349d46a3a0cd9f7 *DESCRIPTION
+8b54e5a89fbda3af5e077053d40bec76 *NAMESPACE
+2a07f54a9ebfed02917b26dec263ec15 *R/output.R
+cfe7a2b83de836acd86244b0b6b89bcf *R/sample.fw.R
+9c99fa256ebcb532a1610c09b952f157 *R/sample.wl.R
+7dd7a2a148f85d20ee93d88974fcb81c *man/dsample-package.Rd
+b138da668a50f356440a056dc1078152 *man/output.Rd
+b9bdd20d8524af41c172beba19fc5ecf *man/sample.fw.Rd
+e58fe0dfc4ccce13fce0afddd9b074c5 *man/sample.wl.Rd
