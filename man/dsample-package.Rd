@@ -1,31 +1,27 @@
 \name{dsample-package}
 \alias{dsample-package}
+\alias{dsample}
 \docType{package}
-
 \title{
 Discretization-based Direct Random Sample Generation
 }
-
 \description{
 The package provides two discretization-based Monte Carlo algorithms, namely the Fu-Wang algorithm and the Wang-Lee algorithm, for random sample generation from a high dimensional distribution of complex structure. The normalizing constant of the target distribution needs not to be known.
 }
-
 \details{
 \tabular{ll}{
 Package: \tab dsample\cr
 Type: \tab Package\cr
-Version: \tab 0.9\cr
-Date: \tab 2012-07-28\cr
+Version: \tab 0.91.1\cr
+Date: \tab 2013-05-11\cr
 License: \tab GPL-3\cr
 }
 }
-
 \author{
 Liqun Wang and Chel Hee Lee
 
 Maintainer: Chel Hee Lee <gnustats@gmail.com>
 }
-
 \references{
 Fu, J. C. and Wang, L. (2002). A random-discretization based Monte Carlo sampling method and its application. Methodology and Computing in Applied Probability, 4, 5-25.
 
@@ -35,7 +31,6 @@ Wang, L. and Lee, C.H. (2008). A discretization-based efficient random sampling 
 }
 
 \keyword{ package }
-
 \examples{
 ## The following example is taken from West (1993, page 414).
 ## West, M. (1993). Approximating posterior distributions by mixture. Journal of the 
@@ -52,9 +47,9 @@ support <- as.data.frame(cbind(val, x1, x2))
 
 ## Applying the Fu-Wang algorithm
 out1 <- sample.fw(X=support, nc=1e4, n=1e3)
-output(out1)
+summary(out1)
 
 ## Applying the Wang-Lee algorithm
 out2 <- sample.wl(X=support, nc=1e4, n=1e3)
-output(out2)
+summary(out2)
 }

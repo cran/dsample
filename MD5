@@ -1,9 +1,9 @@
-ee16092d9ae3df12b349d46a3a0cd9f7 *DESCRIPTION
+1ddd79b40af7fbfcb974ca381705926f *DESCRIPTION
 8b54e5a89fbda3af5e077053d40bec76 *NAMESPACE
-2a07f54a9ebfed02917b26dec263ec15 *R/output.R
-cfe7a2b83de836acd86244b0b6b89bcf *R/sample.fw.R
-9c99fa256ebcb532a1610c09b952f157 *R/sample.wl.R
-7dd7a2a148f85d20ee93d88974fcb81c *man/dsample-package.Rd
-b138da668a50f356440a056dc1078152 *man/output.Rd
-b9bdd20d8524af41c172beba19fc5ecf *man/sample.fw.Rd
-e58fe0dfc4ccce13fce0afddd9b074c5 *man/sample.wl.Rd
+41a429b1cdff13de56c482f56b1ae381 *R/sample.fw.R
+23f3065c5911396cab5e800f01177074 *R/sample.wl.R
+9fad8a0d89ac81d1ce81b3059f9a079c *R/summary.samplefwl.R
+7920e3ab220c7ebe56b8fc5abb83bacc *man/dsample-package.Rd
+cb6f6db52b3c9afe48b8c8982110c1f4 *man/sample.fw.Rd
+38ca0cb487f92dbac428eb78a3de54e7 *man/sample.wl.Rd
+85c1229d243c4802ef1ece86aa538fc1 *man/summary.samplefwl.Rd

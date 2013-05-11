@@ -14,16 +14,16 @@ sample.wl(X, nc = 10000, n = 1000, wconst = NULL)
 }
 
 \arguments{
-\item{X}{
+  \item{X}{
 a \code{data.frame} or a \code{matrix}.  See \sQuote{Details}.
 }
-\item{nc}{
+  \item{nc}{
 a positive integer, the number of contours.  See \sQuote{Details}.
 }
-\item{n}{
+  \item{n}{
 a non-negative integer, the desired sample size. 
 }
-\item{wconst}{
+  \item{wconst}{
 a real number between 0 and 1.  See \sQuote{Details}.
 }
 }
@@ -31,7 +31,7 @@ a real number between 0 and 1.  See \sQuote{Details}.
 \details{
 \code{X} has the number of rows equals to the number of discrete base points. In each row, the first element contians the funcitonal value of the target density and the rest elements are the coordinates at which the density is evaluated.
 
-\code{wconst} is a constant for adjusting the volumn of the last contour. 
+\code{wconst} is a constant for adjusting the volumn of the last contour.
 }
 
 \value{
@@ -50,7 +50,7 @@ Wang, L. and Lee, C.H. (2008). A discretization-based efficient random sampling 
 Liqun Wang and Chel Hee Lee 
 }
 
-\seealso{
+\note{
 \code{\link{sample.fw}}
 }
 
@@ -70,8 +70,6 @@ x2 <- runif(1e5)
 val <- (x1*(1-x2))^5 * (x2*(1-x1))^3 * (1-x1*(1-x2)-x2*(1-x1))^37
 support <- as.data.frame(cbind(val, x1, x2))
 
-output(sample.fw(X=support, nc=1e4, n=1e3))
+summary(sample.fw(X=support, nc=1e4, n=1e3))
 }
 
-%% \keyword{ sampling }
-%% \keyword{ discretization }

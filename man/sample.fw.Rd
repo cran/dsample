@@ -14,13 +14,13 @@ sample.fw(X, nc = 10000, n = 1000)
 }
 
 \arguments{
-\item{X}{
+  \item{X}{
 a \code{data.frame} or a \code{matrix}.  See \sQuote{Details}.
 }
-\item{nc}{
+  \item{nc}{
 a positive integer, the number of contours.  See \sQuote{Details}.
 }
-\item{n}{
+  \item{n}{
 a non-negative integer giving the user specified sample size.
 }
 }
@@ -64,8 +64,6 @@ x2 <- runif(1e5)
 val <- (x1*(1-x2))^5 * (x2*(1-x1))^3 * (1-x1*(1-x2)-x2*(1-x1))^37
 support <- as.data.frame(cbind(val, x1, x2))
 
-output(sample.fw(X=support, nc=1e4, n=1e3))
+summary(sample.fw(X=support, nc=1e4, n=1e3))
 }
 
-%% \keyword{ sampling }
-%% \keyword{ discretization }
