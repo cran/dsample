@@ -1,9 +1,6 @@
-1ddd79b40af7fbfcb974ca381705926f *DESCRIPTION
-8b54e5a89fbda3af5e077053d40bec76 *NAMESPACE
-41a429b1cdff13de56c482f56b1ae381 *R/sample.fw.R
-23f3065c5911396cab5e800f01177074 *R/sample.wl.R
-9fad8a0d89ac81d1ce81b3059f9a079c *R/summary.samplefwl.R
-7920e3ab220c7ebe56b8fc5abb83bacc *man/dsample-package.Rd
-cb6f6db52b3c9afe48b8c8982110c1f4 *man/sample.fw.Rd
-38ca0cb487f92dbac428eb78a3de54e7 *man/sample.wl.Rd
-85c1229d243c4802ef1ece86aa538fc1 *man/summary.samplefwl.Rd
+036b229e29651f7e32825a8355155750 *ChangeLog
+2dad6a68b145606bf94da8edf963b0be *DESCRIPTION
+c14978d5ab7361e40c15328dedb76137 *NAMESPACE
+cbd1cd9e3e062c7c135b55169ec4daa1 *R/dsample.R
+9ad86929d12bc1f428e3ce7de7f1c953 *man/dsample.Rd
+c0d94708a7298fde239e08584ebaacea *man/summary.dsample.Rd
