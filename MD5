@@ -1,6 +1,10 @@
-036b229e29651f7e32825a8355155750 *ChangeLog
-2dad6a68b145606bf94da8edf963b0be *DESCRIPTION
-c14978d5ab7361e40c15328dedb76137 *NAMESPACE
-cbd1cd9e3e062c7c135b55169ec4daa1 *R/dsample.R
-9ad86929d12bc1f428e3ce7de7f1c953 *man/dsample.Rd
-c0d94708a7298fde239e08584ebaacea *man/summary.dsample.Rd
+cf1e111b2decffd1a85fc151c9ecc727 *ChangeLog
+74e09def28936551370904940fb5a958 *DESCRIPTION
+2eba53ee90a4aa8ed07c25b8d84603fe *NAMESPACE
+cd593b680e2b22619bd63733fd1721ea *R/dsample.R
+96286f7db48a6af21b46c622e887cdaa *demo/00Index
+679cae5225bb10a88223764c9d1779dc *demo/mix2.R
+1bea414be0124215d549c75581cebf34 *demo/mix3.R
+9ef6edd702bfbfa6bd7afad353b08384 *man/dsample.Rd
+bb7ef83e9bbf9b058a0fcff1b2fe45ac *man/plot.Rd
+edae103fda9d8c58e278fc5914f5c82a *man/summary_dsample.Rd

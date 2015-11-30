@@ -4,16 +4,16 @@
 \alias{dsample}
 \title{Random Samples Generation Through The Wang-Lee and Fu-Wang Algorithms}
 \usage{
-dsample(X, method = c("wl", "fw"), nc = 10000, n = 1000, wconst = NULL)
+dsample(expr, rpmat, n = 1000, nk = 10000, wconst)
 }
 \arguments{
-\item{X}{must be a \code{data.frame}.  See \sQuote{Details}.}
+\item{expr}{expression}
 
-\item{method}{wl (Wang-Lee), fw (Fu-Wang)}
-
-\item{nc}{a positive integer, the number of contours.  See \sQuote{Details}.}
+\item{rpmat}{matrix containing random points for discretization}
 
 \item{n}{a non-negative integer, the desired sample size.}
+
+\item{nk}{a positive integer, the number of contours.  See \sQuote{Details}.}
 
 \item{wconst}{a real number between 0 and 1.  See \sQuote{Details}.}
 }
@@ -25,7 +25,6 @@ dsample(X, method = c("wl", "fw"), nc = 10000, n = 1000, wconst = NULL)
 }
 \details{
 \code{X} has the number of rows equals to the number of discrete base points. In each row, the first element contians the funcitonal value of the target density and the rest elements are the coordinates at which the density is evaluated.
-
 \code{wconst} is a constant for adjusting the volumn of the last contour.
 }
 \examples{
@@ -33,14 +32,9 @@ dsample(X, method = c("wl", "fw"), nc = 10000, n = 1000, wconst = NULL)
 ## West, M. (1993). Approximating posterior distributions by mixture.
 ##   Journal of the Royal Statistical Society - B, 55, 409-422.
 
-x1 <- runif(1e5)
-x2 <- runif(1e5)
-val <- (x1*(1-x2))^5 * (x2*(1-x1))^3 * (1-x1*(1-x2)-x2*(1-x1))^37
-support <- as.data.frame(cbind(val, x1, x2))
-
-summary(dsample(X=support, method="wl", nc=1e4, n=1e3))
-
-summary(dsample(X=support, method="fw", nc=1e4, n=1e3))
+expr <- expression((x1*(1-x2))^5 * (x2*(1-x1))^3 * (1-x1*(1-x2)-x2*(1-x1))^37)
+sets <- list(x1=runif(1e5), x2=runif(1e5))
+smp <- dsample(expr=expr, rpmat=sets, nk=1e4, n=1e3)
 
 ##
 ## More accurate results can be achieved by increasing the number
@@ -51,11 +45,8 @@ Chel Hee Lee \email{chl948@mail.usask.ca}, Liqun Wang \email{liqun.wang@umanitob
 }
 \references{
 Wang, L. and Lee, C.H. (2014). Discretization-based direct random sample generation. Computational Statistics and Data Analysis, 71, 1001-1010.
-
 Lee, C.H. (2009). Efficient Monte Carlo Random Sample Generation through Discretization, MSc thesis, Department of Satistics, University of Manitoba, Canada
-
 Wang, L. and Fu, J. (2007). A practical sampling approach for a bayesian mixture model with unknown number of components. Statistical Papers, 48(4):631-653.
-
 Fu, J. C. and Wang, L. (2002). A random-discretization based Monte Carlo sampling method and its application. Methodology and Computing in Applied Probability, 4, 5-25.
 }
 \keyword{discretization}
