@@ -1,7 +1,6 @@
-# 
-# A mixture of two populations
-# 
-# updated on 2015.11.29
+#
+# Example from West (1993)
+# Mixture of two normal distributions
 
 library(dsample)
 expr <- expression((x1*(1-x2))^5 * (x2*(1-x1))^3 * (1-x1*(1-x2)-x2*(1-x1))^37)
@@ -11,5 +10,4 @@ op <- summary(smp, n=10, k=2)
 op$means
 op$modes
 do.call(cbind, lapply(split(op$X, op$grp), colMeans))
-plot(op)
-
+plot(op, which=2)
